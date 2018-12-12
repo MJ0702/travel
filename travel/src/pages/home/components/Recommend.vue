@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <img class="item-img" :src="item.imgUrl">
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -17,71 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [
-        {
-          id: '0001',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1701/58/5873367611d51fa3.water.jpg_200x200_d86f0f19.jpg',
-          title: '神仙居',
-          desc: '融险峰、幽谷、秀林、奇瀑于一体'
-        },
-        {
-          id: '0002',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1412/51/7022c84e0aa8987e63f0745a49c93161.water.jpg_200x200_27fdb337.jpg',
-          title: '台州府城文化旅游区（江南长城）',
-          desc: '融险峰、幽谷、秀林、奇瀑于一体'
-        },
-        {
-          id: '0003',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/201405/13/cc6b2870049aa5086badad72fed0d36d.jpg_200x200_85a759dc.jpg',
-          title: '天台山琼台仙谷',
-          desc: '融险峰、幽谷、秀林、奇瀑于一体'
-        },
-        {
-          id: '0004',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/201402/17/35d471cc22aea62ae922c08fa7477844.jpg_200x200_acae492c.jpg',
-          title: '仙居',
-          desc: '融险峰、幽谷、秀林、奇瀑于一体'
-        },
-        {
-          id: '0005',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/201305/28/f06abca4216435a3c8d65eac.jpg_200x200_5e96deb2.jpg',
-          title: '滑泥乐园',
-          desc: '融险峰、幽谷、秀林、奇瀑于一体'
-        },
-        {
-          id: '0006',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/201301/15/25172857c17b606a93835fbb.jpg_200x200_8fa6f7b0.jpg',
-          title: '黄岩大瀑布',
-          desc: '融险峰、幽谷、秀林、奇瀑于一体'
-        },
-        {
-          id: '0007',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/201305/28/e2612882c26e7e09c8d65eac.jpg_200x200_c71d8d8c.jpg',
-          title: '海盗村',
-          desc: '融险峰、幽谷、秀林、奇瀑于一体'
-        },
-        {
-          id: '0008',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1701/58/5873367611d51fa3.water.jpg_200x200_d86f0f19.jpg',
-          title: '北洋蓝美庄园',
-          desc: '融险峰、幽谷、秀林、奇瀑于一体'
-        },
-        {
-          id: '0009',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/201406/06/a44369bc74c861237cdc6446ae322949.jpg_200x200_4feba072.jpg',
-          title: '大鹿岛',
-          desc: '融险峰、幽谷、秀林、奇瀑于一体'
-        },
-        {
-          id: '0010',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/201301/16/fc71dce5dd55159293835fbb.jpg_200x200_28d0d581.jpg',
-          title: '长屿硐天熊猫馆',
-          desc: '融险峰、幽谷、秀林、奇瀑于一体'
-        }
-      ]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
