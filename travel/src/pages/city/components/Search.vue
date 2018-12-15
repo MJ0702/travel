@@ -9,7 +9,7 @@ export default {
   name: 'CitySearch'
 }
 </script>
-<style lang="stylus" scope>
+<style lang="stylus" scoped>
   @import '~styles/varibles.styl'
   .search
     height: .72rem

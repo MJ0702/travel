@@ -12,7 +12,7 @@ export default {
   name: 'CityHeader'
 }
 </script>
-<style lang="stylus" scope>
+<style lang="stylus" scoped>
   @import '~styles/varibles.styl';
   .header
     position: relative
